@@ -10,10 +10,6 @@ namespace Test.Pages
             Driver = webDriver;
         }
 
-        public HomePage()
-        {
-        }
-
         private IWebDriver Driver { get; }
 
         public IWebElement logInButton => Driver.FindElement(By.CssSelector(".login-link.s-btn.s-btn__filled.py8.js-gps-track"));
